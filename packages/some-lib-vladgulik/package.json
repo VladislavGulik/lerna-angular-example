@@ -1,0 +1,21 @@
+{
+  "name": "some-lib-vladgulik",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^6.0.0-rc.0 || ^6.0.0",
+    "@angular/core": "^6.0.0-rc.0 || ^6.0.0"
+  },
+  "main": "bundles/some-lib-vladgulik.umd.js",
+  "module": "fesm5/some-lib-vladgulik.js",
+  "es2015": "fesm2015/some-lib-vladgulik.js",
+  "esm5": "esm5/some-lib-vladgulik.js",
+  "esm2015": "esm2015/some-lib-vladgulik.js",
+  "fesm5": "fesm5/some-lib-vladgulik.js",
+  "fesm2015": "fesm2015/some-lib-vladgulik.js",
+  "typings": "some-lib-vladgulik.d.ts",
+  "metadata": "some-lib-vladgulik.metadata.json",
+  "sideEffects": false,
+  "dependencies": {
+    "tslib": "^1.9.0"
+  }
+}

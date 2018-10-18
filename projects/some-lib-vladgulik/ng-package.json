@@ -1,0 +1,7 @@
+{
+  "$schema": "../../node_modules/ng-packagr/ng-package.schema.json",
+  "dest": "../../packages/some-lib-vladgulik",
+  "lib": {
+    "entryFile": "src/public_api.ts"
+  }
+}

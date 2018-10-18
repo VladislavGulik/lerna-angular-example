@@ -121,6 +121,76 @@
           }
         }
       }
+    },
+    "some-lib": {
+      "root": "projects/some-lib",
+      "sourceRoot": "projects/some-lib/src",
+      "projectType": "library",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/some-lib/tsconfig.lib.json",
+            "project": "projects/some-lib/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/some-lib/src/test.ts",
+            "tsConfig": "projects/some-lib/tsconfig.spec.json",
+            "karmaConfig": "projects/some-lib/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/some-lib/tsconfig.lib.json",
+              "projects/some-lib/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "some-lib-vladgulik": {
+      "root": "projects/some-lib-vladgulik",
+      "sourceRoot": "projects/some-lib-vladgulik/src",
+      "projectType": "library",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/some-lib-vladgulik/tsconfig.lib.json",
+            "project": "projects/some-lib-vladgulik/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/some-lib-vladgulik/src/test.ts",
+            "tsConfig": "projects/some-lib-vladgulik/tsconfig.spec.json",
+            "karmaConfig": "projects/some-lib-vladgulik/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/some-lib-vladgulik/tsconfig.lib.json",
+              "projects/some-lib-vladgulik/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "lerna-angular-example"
