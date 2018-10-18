@@ -1,3 +1,12 @@
+# How to publish multi-packages with libraries using Lerna
+
+1. You need to install Lerna with "npm i lerna" if you using npm or "yarn add lerna" if you using yarn.
+2. In project where you want use lerna type in command line "lerna init". In the root of the project will be created "packages" folder.
+3. After you need to build your library. Use "npm build" in your command line or "ng build" if it's Angular application.
+4. Before publishing you need to be sure what your project use git remotly, your changes are staged and you logged in npm.
+5. When library or libraries is builded in packages and you want to publish that to npm use "lerna publish" command.
+6. Then you can find your package on https://www.npmjs.com in your profile packages.
+
 # LernaAngularExample
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.5.
